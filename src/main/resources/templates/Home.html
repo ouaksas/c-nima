@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"
+          th:href="@{css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/myStyle.css"
+          th:href="@{css/myStyle.css}"/>
+</head>
+<body>
+<h1>Helle world</h1>
+<tbody>
+    <tr th:each="c:${cinemaPage.content}">
+        <td th:text="${c.id}">hello</td>
+    </tr>
+</tbody>
+</body>
+</html>
